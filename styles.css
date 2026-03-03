@@ -8,7 +8,8 @@ body {
 
   margin: 0;
 }
-box {
+
+.box {
   width: 100%;
 
   position: absolute;
@@ -17,6 +18,7 @@ box {
 
   overflow: auto;
 }
+
 * {
   box-sizing: border-box;
 
@@ -33,9 +35,6 @@ box {
   line-height: 1.3;
 }
 
-img {
-  width: 95%;
-}
 #text {
   z-index: 0;
 
@@ -67,7 +66,7 @@ img {
 
   align-items: center;
 
-  visibilty: hidden;
+  visibility: hidden;
 
   opacity: 0;
 
@@ -77,11 +76,13 @@ img {
 
   transition: all 0.3s ease-in;
 }
+
 .nav.show {
   visibility: visible;
 
   opacity: 1;
 }
+
 #header-overlay {
   height: 100vh;
 
@@ -97,6 +98,7 @@ img {
 
   z-index: 1000;
 }
+
 #intro {
   position: absolute;
 
@@ -148,6 +150,7 @@ img {
 
   top: 0;
 }
+
 #button-container {
   height: 40px;
 
@@ -163,6 +166,7 @@ img {
 
   transition: 0.3s ease-in-out;
 }
+
 #button-overlay {
   height: 40px;
 
@@ -174,10 +178,11 @@ img {
 
   position: absolute;
 
-  background: #daddbf;
+  background: red;
 
   transition: 0.3s ease-in-out;
 }
+
 .loader {
   width: 121px !important;
 }
@@ -187,7 +192,8 @@ img {
 
   border: 1px solid rgba(255, 255, 240) !important;
 }
-fuller {
+
+.fuller {
   margin-left: -8%;
 
   opacity: 0;
@@ -200,15 +206,15 @@ fuller {
 
   opacity: 0;
 }
+
 #menu-button-container {
   display: inline-block;
-
-  float: right;
 
   padding: 80px;
 
   margin-top: -60px;
 }
+
 #menu-button {
   height: 30px;
 
@@ -222,12 +228,13 @@ fuller {
 
   overflow: hidden;
 }
+
 #menu-button div {
   height: 3px;
 
   width: 100%;
 
-  background: #b9b271;
+  background: white;
 
   position: absolute;
 
@@ -235,6 +242,7 @@ fuller {
 
   transition: 0.4s ease-in-out;
 }
+
 #menu-button div:nth-child(1) {
   top: 7px;
 }
@@ -262,20 +270,24 @@ fuller {
 #menu-button.animate div:nth-child(3) {
   transform: rotate(-45deg);
 }
+
 #menu-button.change-color div {
-  background: #9b934f;
+  background: green;
 }
+
 #menu-button.hover-animation div:nth-child(1),
 #menu-button.hover-animation div:nth-child(4) {
   width: 80%;
 }
+
 #menu-button.hover-color div {
-  background: #d1c76f;
+  background: blue;
 }
 
 #menu-button.hover-color2 div {
-  background: #d1c76f !important;
+  background: gray;
 }
+
 #menu-overlay {
   position: absolute;
 
@@ -293,9 +305,11 @@ fuller {
 
   z-index: 2000;
 }
+
 .reveal {
   height: 700px !important;
 }
+
 #nav-container {
   position: absolute;
 
@@ -315,6 +329,7 @@ fuller {
 
   transition: 0.6s ease-in-out;
 }
+
 #nav-container ul li a {
   text-decoration: none;
 
@@ -324,30 +339,37 @@ fuller {
 
   line-height: 28px;
 
-  color: #4d4926;
+  color: rgb(134, 83, 83);
 
   transition: 0.3s ease-in-out;
 }
-hidden {
+
+.hidden {
   opacity: 0;
 
   visibility: hidden;
 
   margin-left: -60%;
 }
+
 .nav-animate {
-  color: #9b934f !important;
+  color: rgb(149, 155, 69) !important;
 }
-float: left;
 
-font-size: 84px;
+.first-character {
+  color: rgb(68, 175, 152) !important;
 
-line-height: 64px;
+  float: left;
 
-padding-top: 4px;
+  font-size: 84px;
 
-padding-right: 8px;
+  line-height: 64px;
 
-padding-left: 3px;
+  padding-top: 4px;
 
-font-family: "Montserrat", sans-serif;
+  padding-right: 8px;
+
+  padding-left: 3px;
+
+  font-family: "Montserrat", sans-serif;
+}
